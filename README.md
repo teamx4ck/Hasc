@@ -31,6 +31,9 @@ $ python hasc.py
 # author :
 * Rakib Hossain
 
+# Bug Report
+* FB Page : Team X4CK
+
 # FB Group
 * Name : x4ck cyber army
 * Link : https://m.facebook.com/groups/x4ckcyberarmy/
