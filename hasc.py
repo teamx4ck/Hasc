@@ -34,7 +34,7 @@ def md5(wd,hah):
 		rehash=hashlib.md5(rf).hexdigest()
 		if hah==rehash:
 			done = True
-			print(grn+'Hash Found : '+rf)
+			print(grn+'Hash Found : '+rf.decode()); break
 		else:
 			pass
 		if len(rf)==0:
@@ -54,7 +54,7 @@ def sha256(wd,hah):
 		
 		if hah==rehash:
 			done = True
-			print(grn+'Hash Found : '+rf)
+			print(grn+'Hash Found : '+rf.decode()); break
 		else:
 			pass
 		if len(rf)==0:
@@ -74,7 +74,7 @@ def sha512(wd,hah):
 		
 		if hah==rehash:
 			done = True
-			print(grn+'Hash Found : '+rf)
+			print(grn+'Hash Found : '+rf.decode()); break
 		else:
 			pass
 		if len(rf)==0:
@@ -94,7 +94,7 @@ def sha3_256(wd,hah):
 		
 		if hah==rehash:
 			done = True
-			print(grn+'Hash Found : '+rf)
+			print(grn+'Hash Found : '+rf.decode()); break
 		else:
 			pass
 		if len(rf)==0:
@@ -114,7 +114,7 @@ def sha3_512(wd,hah):
 		
 		if hah==rehash:
 			done = True
-			print(grn+'Hash Found : '+rf)
+			print(grn+'Hash Found : '+rf.decode()); break
 		else:
 			pass
 		if len(rf)==0:
@@ -134,7 +134,7 @@ def blake2b(wd,hah):
 		
 		if hah==rehash:
 			done = True
-			print(grn+'Hash Found : '+rf)
+			print(grn+'Hash Found : '+rf.decode()); break
 		else:
 			pass
 		if len(rf)==0:
@@ -153,7 +153,7 @@ def blake2s(wd,hah):
 		rehash=hashlib.blake2s(rf).hexdigest(); print(rehash)
 		if hah==rehash:
 			done = True
-			print(grn+'Hash Found : '+rf)
+			print(grn+'Hash Found : '+rf.decode()); break
 		else:
 			pass
 		if len(rf)==0:
