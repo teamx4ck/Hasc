@@ -29,7 +29,7 @@ git clone https://www.github.com/teamx4ck/Hasc
 $ python hasc.py
 ```
 # author :
-* 1. Rakib Hossain
+* Rakib Hossain
 
 # FB Group
 * Name : x4ck cyber army
