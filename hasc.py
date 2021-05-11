@@ -22,16 +22,18 @@ ban=cyn+'''
 print(ban)
 def md5(wd,hah):
 	try:
-		open(wd,'rb')
+		open(wd,'r')
 	except:
 		print(red+'Wordlist Not found!'+re)
 		slp(2)
 		sy('clear')
 		sy('python hasc.py')
-	f=open(wd,'rb')
+	f=open(wd,'r')
 	while True:
-		rf=f.readline()
+		rt=f.readline()
+		rf=rt.replace('\n','').encode()
 		rehash=hashlib.md5(rf).hexdigest()
+		
 		if hah==rehash:
 			done = True
 			print(grn+'Hash Found : '+rf.decode()); break
@@ -41,17 +43,18 @@ def md5(wd,hah):
 			print(red+'Hash not in wordlist..'+re); break
 def sha256(wd,hah):
 	try:
-		open(wd,'rb')
+		open(wd,'r')
 	except:
 		print(red+'Wordlist Not found!'+re)
 		slp(2)
 		sy('clear')
 		sy('python hasc.py')
-	f=open(wd,'rb')
+	f=open(wd,'r')
 	while True:
-		rf=f.readline()
+		rt=f.readline()
+		rf=rt.replace('\n','').encode()
 		rehash=hashlib.sha256(rf).hexdigest()
-		
+		print(rehash)
 		if hah==rehash:
 			done = True
 			print(grn+'Hash Found : '+rf.decode()); break
@@ -61,15 +64,16 @@ def sha256(wd,hah):
 			print(red+'Hash not in wordlist..'+re); break
 def sha512(wd,hah):
 	try:
-		open(wd,'rb')
+		open(wd,'r')
 	except:
 		print(red+'Wordlist Not found!'+re)
 		slp(2)
 		sy('clear')
 		sy('python hasc.py')
-	f=open(wd,'rb')
+	f=open(wd,'r')
 	while True:
-		rf=f.readline()
+		rt=f.readline()
+		rf=rt.replace('\n','').encode()
 		rehash=hashlib.sha512(rf).hexdigest()
 		
 		if hah==rehash:
@@ -81,15 +85,16 @@ def sha512(wd,hah):
 			print(red+'Hash not in wordlist..'+re); break
 def sha3_256(wd,hah):
 	try:
-		open(wd,'rb')
+		open(wd,'r')
 	except:
 		print(red+'Wordlist Not found!'+re)
 		slp(2)
 		sy('clear')
 		sy('python hasc.py')
-	f=open(wd,'rb')
+	f=open(wd,'r')
 	while True:
-		rf=f.readline()
+		rt=f.readline()
+		rf=rt.replace('\n','').encode()
 		rehash=hashlib.sha3_256(rf).hexdigest()
 		
 		if hah==rehash:
@@ -101,15 +106,16 @@ def sha3_256(wd,hah):
 			print(red+'Hash not in wordlist..'+re); break
 def sha3_512(wd,hah):
 	try:
-		open(wd,'rb')
+		open(wd,'r')
 	except:
 		print(red+'Wordlist Not found!'+re)
 		slp(2)
 		sy('clear')
 		sy('python hasc.py')
-	f=open(wd,'rb')
+	f=open(wd,'r')
 	while True:
-		rf=f.readline()
+		rt=f.readline()
+		rf=rt.replace('\n','').encode()
 		rehash=hashlib.sha3_512(rf).hexdigest()
 		
 		if hah==rehash:
@@ -121,15 +127,16 @@ def sha3_512(wd,hah):
 			print(red+'Hash not in wordlist..'+re); break
 def blake2b(wd,hah):
 	try:
-		open(wd,'rb')
+		open(wd,'r')
 	except:
 		print(red+'Wordlist Not found!'+re)
 		slp(2)
 		sy('clear')
 		sy('python hasc.py')
-	f=open(wd,'rb')
+	f=open(wd,'r')
 	while True:
-		rf=f.readline()
+		rt=f.readline()
+		rf=rt.replace('\n','').encode()
 		rehash=hashlib.blake2b(rf).hexdigest()
 		
 		if hah==rehash:
@@ -141,15 +148,16 @@ def blake2b(wd,hah):
 			print(red+'Hash not in wordlist..'+re); break
 def blake2s(wd,hah):
 	try:
-		open(wd,'rb')
+		open(wd,'r')
 	except:
 		print(red+'Wordlist Not found!'+re)
 		slp(2)
 		sy('clear')
 		sy('python hasc.py')
-	f=open(wd,'rb')
+	f=open(wd,'r')
 	while True:
-		rf=f.readline()
+		rt=f.readline()
+		rf=rt.replace('\n','').encode()
 		rehash=hashlib.blake2s(rf).hexdigest(); print(rehash)
 		if hah==rehash:
 			done = True
