@@ -1,6 +1,5 @@
 # HASC
 A python coded tool for cracking MD5, SHA-256,SHA-512 etc. By Team x4ck.
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=teamx4ck&label=Views&color=blue&style=plastic" alt="iampawan" /> </p>
 # Features :
 * MD5 Cracking
 * SHA-256 Cracking
